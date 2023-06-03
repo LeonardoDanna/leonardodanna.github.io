@@ -1,90 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonardo Danna - Portfolio</title>
-    
+    <title>Oi, eu sou o Leonardo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-        * {
+        /* Estilos gerais */
+        body {
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5f5;
         }
-
-        body {
-            background: #efefdd;
-            font-family: 'Montserrat';
-
+        
+        /* Estilos para desktop */
+        .desktop {
+            display: block;
         }
-        nav {
-            background: #2e150e;
-            width: 100%;
+        .desktop p {
+            text-align: justify;
+}
+        
+        /* Estilos para mobile */
+        .mobile {
+            display: none;
+        }
+        @media (max-width: 768px) {
+        .mobile p {
+            text-align: justify;
+            }
+        }
+        
+        /* Estilos para dispositivos móveis */
+        @media (max-width: 768px) {
+            .desktop {
+                display: none;
+            }
+            
+            .mobile {
+                display: block;
+            }
+        }
+        
+        /* Estilos específicos */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+        
+        h1 {
             text-align: center;
-            height: 135px;
+            color: #333;
         }
-        nav a {
-            color: #765140;
-            text-decoration: solid;
-            font-size: 30px;
-            padding: 50px;
+        
+        p {
+            margin-bottom: 20px;
+            color: #666;
         }
-
-        a:hover {
-            color: #4e2d23;
+        
+        ul {
+            margin-left: 20px;
+            color: #666;
         }
-
-        #logo {
-            font-size: 50px;
+        
+        li {
+            margin-bottom: 10px;
         }
-
-        img {
-            border-radius: 150px;
-            height: 400px;
-            border: 20px solid #4e2d23;
-            margin-top: 50px;
+        
+        /* Animações */
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
-
-        h3, h4 {
+        
+        .fade-in {
+            animation: fade-in 1s ease-in-out;
+        }
+        
+        .profile-pic {
             text-align: center;
+            margin-bottom: 20px;
         }
-
-        .sobre {
-            background: #a88061;
-            height: 150px;
-            margin: 50px 200px;
-            border-radius: 10px;
-            box-shadow:#4e2d23;
-
+        
+        .profile-pic img {
+            width: 200px;
+            border-radius: 50%;
         }
-
-        .sobre h3{
-            padding: 30px;
+        
+        .button-container {
+            text-align: center;
+            margin-bottom: 20px;
         }
-
+        
+        .button-container a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+        
+        .button-container a:hover {
+            background-color: #0056b3;
+        }
+        
+        .explanation {
+            margin-bottom: 20px;
+        }
     </style>
-
-    <script>
-
-    </script>
 </head>
-    <nav>
-        <br><br>
-          <a id="logo" href="#">Leonardo Danna</a>
-          <a href="#">Apresentação</a>
-          <a target="_blank" href="https://github.com/LeonardoDanna">Github</a>
-          <a target="_blank" href="https://www.linkedin.com/in/leonardo-de-souza-danna-a65a84234/">Linkedin</a>
-    </nav>
 <body>
-    <div class="presentation">
-        <center><img src="https://avatars.githubusercontent.com/u/36389555?v=4" alt=""></center>
-        <br><br>
-        <h3>Estudante de Sistemas de Informação.</h3>
-        <h4>PUC Campinas.</h4>
-    </div>
-    <div class="sobre">
-        <h3>Contato: <br><br> leonardosouzadanna@gmail.com <br><br></h3>
+    <div class="container fade-in">
+        <h1>Oi, eu sou o Leonardo!</h1>
+        
+        <div class="profile-pic">
+            <img src="LeoFormal.jfif" alt="Foto do Profissional">
+        </div>
+        
+        <div class="desktop">
+            <p><span style="margin-left: 20px;"></span>Seja bem-vindo(a) ao meu site de apresentação! Tenho 18 anos e sou um entusiasta da área de Tecnologia da Informação. Possuo experiência com várias tecnologias, como <strong>Python, C, SQL, Java, HTML/CSS</strong> e <strong>JavaScript.</strong>  Estou constantemente aprendendo e buscando aprimorar minhas habilidades para me destacar no mercado.</p>
+        </div>
+        
+        <div class="mobile">
+            <p><span style="margin-left: 20px;"></span>Seja bem-vindo(a) ao meu site de apresentação! Tenho 18 anos e sou um entusiasta da área de Tecnologia da Informação. Possuo experiência com várias tecnologias, como <strong>Python, C, SQL, Java, HTML/CSS,</strong> e <strong>JavaScript.</strong>  Estou constantemente aprendendo e buscando aprimorar minhas habilidades para me destacar no mercado.</p>
+        </div>
+        
+        <p><span style="margin-left: 20px;"></span>Entre em contato comigo para discutirmos como posso ajudar em seus projetos.</p>
+        
+        <h2>Experiência</h2>
+        <ul>
+            <li><strong>Exército Brasileiro</strong> </li>
+            <li><strong>Período:</strong> Fevereiro/2023 - atualmente. </li>
+        </ul>
+        <div class="explanation">
+            <p>Ao longo de 1 ano de serviço no Exército Brasileiro, adquiri habilidades valiosas em liderança, trabalho em equipe e resolução de problemas. Essa experiência me proporcionou um ambiente desafiador e me ajudou a desenvolver disciplina e comprometimento.</p>
+        </div>
+        
+        <h2>Formação Acadêmica</h2>
+        <ul>
+            <li>PUC-Campinas - Aluno</li>
+        </ul>
+        <div class="explanation">
+            <p>Atualmente, estou com a matrícula no curso de <strong>Sistemas de Informação</strong> trancada devido estar servindo o exército.</p>
+        </div>
+        
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Língua Inglesa - Fluente</li>
+        </ul>
+        <div class="explanation">
+            <p>Frequentei a escola Cultura Inglesa, além de sempre ter tido admiração à lingua, sendo assim, possuo um nível de proficiência ótimo na língua inglesa. Isso me permite comunicar e colaborar efetivamente em projetos internacionais, bem como acompanhar as últimas tendências e recursos da indústria de TI.</p>
+        </div>
+        
+        <div class="button-container">
+            <a href="https://github.com/LeonardoDanna" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/leonardo-de-souza-danna-a65a84234/" target="_blank">LinkedIn</a>
+        </div>
     </div>
 </body>
 </html>
